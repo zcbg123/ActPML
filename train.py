@@ -151,23 +151,14 @@ if __name__ == '__main__':
 
     opt.save_path = opt.save_path + opt.data_name + '/' + opt.model_name
     if opt.data_name == 'LEVIR':
-        opt.train_root = '/home/ww/rhl/dataset/LEVIR-cd-256/train/'
-        opt.val_root = '/home/ww/rhl/dataset/LEVIR-cd-256/val/'
+        opt.train_root = 'dataset/LEVIR-cd-256/train/'
+        opt.val_root = 'dataset/LEVIR-cd-256/val/'
     elif opt.data_name == 'WHU':
-        opt.train_root = '/home/ww/rhl/dataset/WHU-CD-256/train/'
-        opt.val_root = '/home/ww/rhl/dataset/WHU-CD-256/val/'
-    elif opt.data_name == 'CDD':
-        opt.train_root = '/data/chengxi.han/data/CDD_ChangeDetectionDataset/Real/subset/train/'
-        opt.val_root = '/data/chengxi.han/data/CDD_ChangeDetectionDataset/Real/subset/val/'
-    elif opt.data_name == 'DSIFN':
-        opt.train_root = '/data/chengxi.han/data/DSIFN256/train/'
-        opt.val_root = '/data/chengxi.han/data/DSIFN256/val/'
+        opt.train_root = 'dataset/WHU-CD-256/train/'
+        opt.val_root = 'dataset/WHU-CD-256/val/'
     elif opt.data_name == 'SYSU':
-        opt.train_root = '/home/ww/sac/dataset/SYSU-CD/train/'
-        opt.val_root = '/home/ww/sac/dataset/SYSU-CD/val/'
-    elif opt.data_name == 'S2Looking':
-        opt.train_root = '/home/ww/sac/dataset/S2Looking-CD/train/'
-        opt.val_root = '/home/ww/sac/dataset/S2Looking-CD/val/'
+        opt.train_root = 'dataset/SYSU-CD/train/'
+        opt.val_root = 'dataset/SYSU-CD/val/'
 
     train_loader = data_loader.get_loader(opt.train_root, opt.batchsize, opt.trainsize, num_workers=2, shuffle=True, pin_memory=True)
     val_loader = data_loader.get_test_loader(opt.val_root, opt.batchsize, opt.trainsize, num_workers=2, shuffle=False, pin_memory=True)

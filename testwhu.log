@@ -1,0 +1,71 @@
+nohup: 忽略输入
+[INFO] Register count_convNd() for <class 'torch.nn.modules.conv.Conv2d'>.
+[INFO] Register count_normalization() for <class 'torch.nn.modules.batchnorm.BatchNorm2d'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.activation.ReLU'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.container.Sequential'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.pooling.MaxPool2d'>.
+[INFO] Register count_relu() for <class 'torch.nn.modules.activation.LeakyReLU'>.
+[INFO] Register count_linear() for <class 'torch.nn.modules.linear.Linear'>.
+[INFO] Register count_normalization() for <class 'torch.nn.modules.normalization.LayerNorm'>.
+[INFO] Register count_adap_avgpool() for <class 'torch.nn.modules.pooling.AdaptiveAvgPool2d'>.
+[INFO] Register count_upsample() for <class 'torch.nn.modules.upsampling.UpsamplingBilinear2d'>.
+params:  54.915M
+USE GPU 0
+load model from  ./outputnewAL/WHU/FMENet_best_iou.pth
+Strat validing!
+
+  0%|          | 0/47 [00:00<?, ?it/s]
+  2%|▏         | 1/47 [00:01<00:47,  1.02s/it]
+  4%|▍         | 2/47 [00:01<00:35,  1.26it/s]
+  6%|▋         | 3/47 [00:02<00:31,  1.39it/s]
+  9%|▊         | 4/47 [00:02<00:29,  1.47it/s]
+ 11%|█         | 5/47 [00:03<00:28,  1.50it/s]
+ 13%|█▎        | 6/47 [00:04<00:26,  1.52it/s]
+ 15%|█▍        | 7/47 [00:04<00:26,  1.53it/s]
+ 17%|█▋        | 8/47 [00:05<00:25,  1.55it/s]
+ 19%|█▉        | 9/47 [00:06<00:24,  1.56it/s]
+ 21%|██▏       | 10/47 [00:06<00:23,  1.56it/s]
+ 23%|██▎       | 11/47 [00:07<00:23,  1.56it/s]
+ 26%|██▌       | 12/47 [00:08<00:22,  1.56it/s]
+ 28%|██▊       | 13/47 [00:08<00:21,  1.56it/s]
+ 30%|██▉       | 14/47 [00:09<00:21,  1.57it/s]
+ 32%|███▏      | 15/47 [00:09<00:20,  1.56it/s]
+ 34%|███▍      | 16/47 [00:10<00:19,  1.56it/s]
+ 36%|███▌      | 17/47 [00:11<00:19,  1.56it/s]
+ 38%|███▊      | 18/47 [00:11<00:18,  1.55it/s]
+ 40%|████      | 19/47 [00:12<00:18,  1.55it/s]
+ 43%|████▎     | 20/47 [00:13<00:17,  1.54it/s]
+ 45%|████▍     | 21/47 [00:13<00:16,  1.55it/s]
+ 47%|████▋     | 22/47 [00:14<00:16,  1.55it/s]
+ 49%|████▉     | 23/47 [00:15<00:15,  1.54it/s]
+ 51%|█████     | 24/47 [00:15<00:14,  1.55it/s]
+ 53%|█████▎    | 25/47 [00:16<00:14,  1.55it/s]
+ 55%|█████▌    | 26/47 [00:17<00:13,  1.55it/s]
+ 57%|█████▋    | 27/47 [00:17<00:12,  1.56it/s]
+ 60%|█████▉    | 28/47 [00:18<00:12,  1.57it/s]
+ 62%|██████▏   | 29/47 [00:18<00:11,  1.56it/s]
+ 64%|██████▍   | 30/47 [00:19<00:10,  1.57it/s]
+ 66%|██████▌   | 31/47 [00:20<00:10,  1.56it/s]
+ 68%|██████▊   | 32/47 [00:20<00:09,  1.56it/s]
+ 70%|███████   | 33/47 [00:21<00:08,  1.56it/s]
+ 72%|███████▏  | 34/47 [00:22<00:08,  1.56it/s]
+ 74%|███████▍  | 35/47 [00:22<00:07,  1.56it/s]
+ 77%|███████▋  | 36/47 [00:23<00:07,  1.56it/s]
+ 79%|███████▊  | 37/47 [00:24<00:06,  1.56it/s]
+ 81%|████████  | 38/47 [00:24<00:05,  1.56it/s]
+ 83%|████████▎ | 39/47 [00:25<00:05,  1.55it/s]
+ 85%|████████▌ | 40/47 [00:25<00:04,  1.56it/s]
+ 87%|████████▋ | 41/47 [00:26<00:03,  1.56it/s]
+ 89%|████████▉ | 42/47 [00:27<00:03,  1.56it/s]
+ 91%|█████████▏| 43/47 [00:27<00:02,  1.56it/s]
+ 94%|█████████▎| 44/47 [00:28<00:01,  1.56it/s]
+ 96%|█████████▌| 45/47 [00:29<00:01,  1.56it/s]
+ 98%|█████████▊| 46/47 [00:29<00:00,  1.56it/s]
+100%|██████████| 47/47 [00:30<00:00,  1.85it/s]
+100%|██████████| 47/47 [00:30<00:00,  1.56it/s]
+[Test] F1: 0.9443, Precision:0.9565, Recall: 0.9324, OA: 0.9956, Kappa: 0.9420,IoU: 0.8945
+F1-Score: Precision: Recall: OA: Kappa: IoU: 
+94.43\95.65\93.24\99.56\94.20\89.45
+94.43 95.65 93.24 99.56 94.20 89.45
+
+程序测试test的时间为: 33.860491037368774

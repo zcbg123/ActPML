@@ -87,23 +87,13 @@ if __name__ == '__main__':
         print('USE GPU 3')
 
     if opt.data_name == 'LEVIR':
-        opt.test_root = '/home/ww/rhl/dataset/LEVIR-cd-256/test/'
+        opt.test_root = 'dataset/LEVIR-cd-256/test/'
 
     elif opt.data_name == 'WHU':
-        opt.test_root = '/home/ww/rhl/dataset/WHU-CD-256/test/'
-
-    elif opt.data_name == 'CDD':
-        opt.test_root = '/data/chengxi.han/data/CDD_ChangeDetectionDataset/Real/subset/test/'
-
-    elif opt.data_name == 'DSIFN':
-        opt.test_root = '/data/chengxi.han/data/DSIFN256/test/'
+        opt.test_root = 'dataset/WHU-CD-256/test/'
 
     elif opt.data_name == 'SYSU':
-        opt.test_root = '/home/ww/sac/dataset/SYSU-CD/test/'
-
-    elif opt.data_name == 'S2Looking':
-        opt.test_root = '/home/ww/sac/dataset/S2Looking-CD/test/'
-
+        opt.test_root = 'sac/dataset/SYSU-CD/test/'
 
     opt.save_path = opt.save_path + opt.data_name + '/' + opt.model_name + '/'
     test_loader = data_loader.get_test_loader(opt.test_root, opt.batchsize, opt.trainsize, num_workers=2, shuffle=False, pin_memory=True)
