@@ -11,7 +11,7 @@ nohup: 忽略输入
 [INFO] Register count_upsample() for <class 'torch.nn.modules.upsampling.UpsamplingBilinear2d'>.
 params:  54.915M
 USE GPU 0
-load model from  ./outputnewAL/LEVIR/FMENet_best_iou.pth
+load model from  ./outputnewAL/LEVIR/ActPML_best_iou.pth
 Strat validing!
 
   0%|          | 0/128 [00:00<?, ?it/s]
